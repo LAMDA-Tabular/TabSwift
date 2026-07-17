@@ -170,8 +170,8 @@ class TabSwiftRegressor(RegressorMixin, BaseEstimator):
         
         """
 
-        repo_id = "pretrain-models/tabswift"
-        filename = "tabswift-regressor.ckpt"
+        repo_id = "LAMDA-Tabular/TabSwift"
+        filename = "swift.ckpt"
         # model_path = self.model_path
         if self.model_path is None:
             model_path = hf_hub_download(repo_id=repo_id, filename=filename)

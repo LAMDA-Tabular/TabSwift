@@ -180,8 +180,8 @@ class TabSwiftClassifier(ClassifierMixin, BaseEstimator):
             If the checkpoint doesn't contain the required 'config' or 'state_dict' keys.
         """
 
-        repo_id = "pretrain-models/tabswift"
-        filename = "tabswift-classifier.ckpt"
+        repo_id = "LAMDA-Tabular/TabSwift"
+        filename = "swift.ckpt"
         # model_path = self.model_path
         if self.model_path is None:
             model_path = hf_hub_download(repo_id=repo_id, filename=filename)
